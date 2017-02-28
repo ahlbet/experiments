@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+#newPoem {
+  display: none;
+}
+
+#poemLine {
+  margin: 2em auto;
+  border: 2px solid black;
+}
+
+#buttonRow {
+/*  border: 2px solid black;*/
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  box-shadow: 1px 1px 5px black;
+}
+
+#newPoem {
+  border: 2px solid black;
+}
+
+#newPoemRow {
+  width: 70%;
+  margin: auto;
+}

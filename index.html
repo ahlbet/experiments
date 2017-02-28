@@ -7,13 +7,53 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 text-center pt-2">
+          <h1>Poetry Tinder</h1>
+        </div>  
+      </div>
+      
+<!--      line of poetry to be added to poem or skipped-->
+      <div class="row">
+        <div id="poemLine" class="col-xs-4 text-center p-4">
+          
+        </div>
+      </div>
+      
+<!--      button options for adding/skipping/creating-->
+      <div id="buttonRow" class="row py-4">
+        <div class="col-lg-3 col-sm-6 text-center">
+          <button id="addButton" class="btn btn-lg btn-primary my-1">Add</button>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <button id="skipButton" class="btn btn-lg btn-danger my-1">Skip</button>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <button id="createButton" class="btn btn-lg btn-success my-1">Create</button>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <button id="clearButton" class="btn btn-lg btn-info my-1">Clear</button>
+        </div>
+      </div>
+      
+<!--      finished poem-->
+      <div id="newPoemRow" class="row">
+        <div id="newPoem" class="col-sm-12 text-center my-4">
+        
+        </div>
+      </div>
+    </div>  
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <script src="script.js"></script>
   </body>
 </html>
