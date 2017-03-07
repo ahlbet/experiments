@@ -1,0 +1,23 @@
+body {
+	min-height: 100vh;
+	background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+
+h1 {
+	font-family: 'Ranga', cursive;
+}
+
+p,
+label,
+li {
+	/*font-size: 1.5em;*/
+}
+
+ul {
+	list-style: none;
+}
+
+#totalArea {
+	display: inline;
+	padding-left: 1em;
+}

@@ -1,7 +1,6 @@
 body {
   min-height: 100vh;
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-  font-family: 'Indie Flower', cursive;
 }
 
 .btn {
@@ -31,4 +30,9 @@ body {
 
 h3 {
   padding-top: .5em;
+  font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+   font-family: 'Indie Flower', cursive;
 }
