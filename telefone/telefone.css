@@ -12,20 +12,26 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
   min-height: 100vh;
 }
 
 .title {
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
   align-self: center;
 }
 
 .button {
   justify-content: center;
   align-self: center;
+
+  padding-bottom: 1em;
 }
 
 h3 {
@@ -35,4 +41,18 @@ h3 {
 
 h1 {
    font-family: 'Indie Flower', cursive;
+}
+
+p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3em;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
 }

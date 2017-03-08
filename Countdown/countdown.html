@@ -7,11 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="tinder.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="countdown.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   </head>
   <body>
-    
+
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,64 +21,57 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../tinder/tinder.html">Poetry Tinder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../telefone/telefone.html">Telefone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../shakes/shakes.html">Shakespeare</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="tinder.html">Poetry Tinder</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="telefone.html">Telefone</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="shakes/shakes.html">Shakespeare</a>
+            <a class="nav-link" href="countdown.html">Countdown Clock</a>
           </li>
         </ul>
       </div>
     </nav>
-    
+
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 text-center pt-2">
-          <h1>Poetry Tinder</h1>
-        </div>  
-      </div>
-      
-<!--      line of poetry to be added to poem or skipped-->
-      <div class="row">
-        <div id="poemLine" class="col-xs-4 text-center p-4">
-          
+      <div class="row text-center">
+        <div class="col-xs-12 text-center countdown-title pt-4">
+          <h1>Countdown to <span class="title-date"></span></h1>
         </div>
       </div>
-      
-<!--      button options for adding/skipping/creating-->
-      <div id="buttonRow" class="row py-4">
-        <div class="col-lg-3 col-sm-6 text-center">
-          <button id="addButton" class="btn btn-lg btn-primary my-1">Add</button>
+      <div id="clock" class="row">
+        <div class="text-center clockContainer">
+          <span class="days">0</span>
+          <div class="Clock-days col-xs-3">Days</div>
         </div>
-        <div class="col-lg-3 col-sm-6 text-center">
-          <button id="skipButton" class="btn btn-lg btn-danger my-1">Skip</button>
+        <div class="text-center clockContainer">
+          <span class="hours">0</span>
+          <div class="Clock-hours col-xs-3">Hours</div>
         </div>
-        <div class="col-lg-3 col-sm-6 text-center">
-          <button id="createButton" class="btn btn-lg btn-success my-1">Create</button>
+        <div class="text-center clockContainer">
+          <span class="minutes">0</span>
+          <div class="Clock-minutes col-xs-3">Minutes</div>
         </div>
-        <div class="col-lg-3 col-sm-6 text-center">
-          <button id="clearButton" class="btn btn-lg btn-info my-1">Clear</button>
-        </div>
-      </div>
-      
-<!--      finished poem-->
-      <div id="newPoemRow" class="row">
-        <div id="newPoem" class="col-sm-12 text-center my-4">
-        
+        <div class="text-center clockContainer">
+          <span class="seconds">0</span>
+          <div class="Clock-seconds col-xs-3">Seconds</div>
         </div>
       </div>
-    </div>  
+      <div class="row form pt-4">
+        <input id="userDate" placeholder="New Date" type="text" name="userInput" value="">
+        <button id="searchButton" class="btn btn-large btn-primary" type="button" name="submit">Submit</button>
+      </div>
+    </div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    
-    <script src="tinder.js"></script>
-  </body>
-</html>
+    <script src="countdown.js"></script>
+</body>
