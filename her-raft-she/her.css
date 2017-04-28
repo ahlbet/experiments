@@ -1,0 +1,41 @@
+h1, h4, h5, h6, button, p {
+  font-family: 'Asar', serif;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+
+  color: #A1140A;
+}
+
+/*button:hover {
+  color: #A1140A;
+  transition: 1s all ease-in-out;
+}*/
+
+.shards,
+.tragedy,
+.falling,
+.nevergreen,
+.fire,
+.forgot,
+.sorrow,
+.numb,
+.someone,
+.usual,
+.hear,
+.true,
+.pixel,
+.pale,
+.dusk {
+  display: none;
+}
+
+
+@media (min-width: 775px) {
+  .container-fluid {
+    max-width: 60%;
+  }
+}

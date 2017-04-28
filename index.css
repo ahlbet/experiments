@@ -2,3 +2,13 @@ body {
 	min-height: 100vh;
 	background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
 }
+
+img {
+  transition: transform 2s ease-in-out;
+  
+  padding-bottom: 1em;
+}
+
+img:hover {
+  transform: scale(1.025);
+}
